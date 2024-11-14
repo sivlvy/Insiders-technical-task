@@ -1,5 +1,6 @@
 import styles from "./tabs-item.module.css";
 import { DragEventType, Tab } from "@/helpers/types";
+import { FaTimes } from "react-icons/fa";
 
 type TabsItemProps = {
   item: Tab;
@@ -31,7 +32,7 @@ const TabsItem = ({
       <item.icon />
       <p className={styles.title}>{item.name}</p>
       <button onClick={onDelete} className={styles.btn}>
-        X
+        <FaTimes />
       </button>
     </div>
   );

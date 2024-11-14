@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { Tab } from "@/helpers/types";
 import styles from "../TabsList/TabsItem/tabs-item.module.css";
+import { FaChevronDown, FaTimes } from "react-icons/fa";
 
 type Props = {
   tabs: Tab[];
@@ -31,7 +32,7 @@ const CustomSelect = ({ tabs, handleUnPin }: Props) => {
         color="primary"
         onClick={handleClick}
       >
-        B
+        <FaChevronDown />
       </Button>
       <Menu
         anchorEl={menuOpen}
@@ -64,7 +65,7 @@ const CustomSelect = ({ tabs, handleUnPin }: Props) => {
                 handleUnPin(tab.id);
               }}
             >
-              X
+              <FaTimes />
             </button>
           </MenuItem>
         ))}
