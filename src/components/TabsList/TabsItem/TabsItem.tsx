@@ -7,6 +7,7 @@ type TabsItemProps = {
   dragOverHandler: (e: DragEventType) => void;
   dragStartHandler: () => void;
   dropHandler: (e: DragEventType, item: Tab) => void;
+  onDelete: () => void;
 };
 
 const TabsItem = ({
@@ -15,6 +16,7 @@ const TabsItem = ({
   dragOverHandler,
   dragStartHandler,
   dropHandler,
+  onDelete,
 }: TabsItemProps) => {
   return (
     <div
@@ -26,8 +28,11 @@ const TabsItem = ({
       draggable
       className={styles.wrapper}
     >
+      <item.icon />
       <p className={styles.title}>{item.name}</p>
-      <button className={styles.btn}>X</button>
+      <button onClick={onDelete} className={styles.btn}>
+        X
+      </button>
     </div>
   );
 };
