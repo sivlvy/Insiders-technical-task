@@ -1,17 +1,20 @@
 import { Tab } from "@/helpers/types";
-import { DashboardIcon } from "../../../assets/icons/DashboardIcon";
-import { BankingIcon } from "../../../assets/icons/BankingIcon";
-import { TelephoneIcon } from "../../../assets/icons/TelephoneIcon";
-import { AccountingIcon } from "../../../assets/icons/AccountingIcon";
-import { VerkaufIcon } from "../../../assets/icons/VerkaufIcon";
-import { StatisticIcon } from "../../../assets/icons/StatisticIcon";
-import { PostOfficeIcon } from "../../../assets/icons/PostOfficeIcon";
-import { AdministrationIcon } from "../../../assets/icons/AdministrationIcon";
-import { RechnIcon } from "../../../assets/icons/RechnIcon";
-import { HelpIcon } from "../../../assets/icons/HelpIcon";
-import { WarenbestardIcon } from "../../../assets/icons/WarenbestardIcon";
-import { AuthIcon } from "../../../assets/icons/AuthIcon";
-import { EinkaufIcon } from "../../../assets/icons/EinkaufIcon";
+
+import {
+  AccountingIcon,
+  AdministrationIcon,
+  AuthIcon,
+  BankingIcon,
+  DashboardIcon,
+  HelpIcon,
+  PostOfficeIcon,
+  RechnIcon,
+  StatisticIcon,
+  TelephoneIcon,
+  VerkaufIcon,
+  WarenbestardIcon,
+} from "../../../assets/icons/index";
+import EinkaufIcon from "../../../assets/icons/EinkaufIcon";
 
 export const tabs: Tab[] = [
   {

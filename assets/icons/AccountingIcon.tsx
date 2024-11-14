@@ -4,11 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const AccountingIcon = ({
-  size = "24",
-  color = "#000",
-  className,
-}: Props) => {
+const AccountingIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -23,3 +19,5 @@ export const AccountingIcon = ({
     </svg>
   );
 };
+
+export default AccountingIcon;

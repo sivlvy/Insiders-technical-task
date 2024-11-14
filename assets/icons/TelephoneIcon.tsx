@@ -4,11 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const TelephoneIcon = ({
-  size = "24",
-  color = "#000",
-  className,
-}: Props) => {
+const TelephoneIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -24,3 +20,5 @@ export const TelephoneIcon = ({
     </svg>
   );
 };
+
+export default TelephoneIcon;

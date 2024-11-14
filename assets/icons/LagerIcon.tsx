@@ -4,11 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const LagerIcon = ({
-  size = "24",
-  color = "#000",
-  className,
-}: Props) => {
+const LagerIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -21,3 +17,5 @@ export const LagerIcon = ({
     </svg>
   );
 };
+
+export default LagerIcon;

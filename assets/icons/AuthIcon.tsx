@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const AuthIcon = ({ size = "24", color = "#000", className }: Props) => {
+const AuthIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -31,3 +31,5 @@ export const AuthIcon = ({ size = "24", color = "#000", className }: Props) => {
     </svg>
   );
 };
+
+export default AuthIcon;

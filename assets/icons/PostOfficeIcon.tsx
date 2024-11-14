@@ -4,11 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const PostOfficeIcon = ({
-  size = "24",
-  color = "#000",
-  className,
-}: Props) => {
+const PostOfficeIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -30,3 +26,5 @@ export const PostOfficeIcon = ({
     </svg>
   );
 };
+
+export default PostOfficeIcon;

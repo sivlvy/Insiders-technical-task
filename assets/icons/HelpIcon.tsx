@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const HelpIcon = ({ size = "24", color = "#000", className }: Props) => {
+const HelpIcon = ({ size = "24", color = "#000", className }: Props) => {
   return (
     <svg
       className={className}
@@ -20,3 +20,5 @@ export const HelpIcon = ({ size = "24", color = "#000", className }: Props) => {
     </svg>
   );
 };
+
+export default HelpIcon;

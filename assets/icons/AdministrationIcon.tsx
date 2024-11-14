@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const AdministrationIcon = ({
+const AdministrationIcon = ({
   size = "24",
   color = "#000",
   className,
@@ -24,3 +24,5 @@ export const AdministrationIcon = ({
     </svg>
   );
 };
+
+export default AdministrationIcon;
